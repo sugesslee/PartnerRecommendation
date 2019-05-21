@@ -33,7 +33,7 @@ def connect_mysql():
     """ 创建链接 """
     try:
         # config = find("db_config.json", os.path.abspath("."))
-        with open("../conf/db_config.json", "r") as file:
+        with open("./conf/db_config.json", "r") as file:
             load_dict = json.load(file)
         return pymysql.connect(cursorclass=pymysql.cursors.DictCursor, **load_dict)
     except Exception as e:

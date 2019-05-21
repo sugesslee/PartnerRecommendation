@@ -10,7 +10,7 @@ Python 日志工具包
 """
 import logging.handlers
 
-log_file = '../logs/output.log'
+log_file = './logs/output.log'
 
 fmt = '%(asctime)s - %(levelname)s - %(filename)s#%(funcName)s():%(lineno)s - %(name)s - %(message)s'
 

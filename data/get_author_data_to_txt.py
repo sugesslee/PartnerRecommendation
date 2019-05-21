@@ -4,7 +4,7 @@
 @Time    : 2019-04-18 23:01
 @Author  : red
 @Site    : 
-@File    : get_author_data.py
+@File    : get_author_data_to_txt.py
 @Software: PyCharm
 """
 from utils import sql_util
