@@ -33,7 +33,7 @@ def connect_mysql():
     """ 创建链接 """
     try:
         # config = find("db_config.json", os.path.abspath("."))
-        with open("./conf/db_config.json", "r") as file:
+        with open("../conf/db_config.json", "r") as file:
             load_dict = json.load(file)
         return pymysql.connect(cursorclass=pymysql.cursors.DictCursor, **load_dict)
     except Exception as e:
@@ -230,7 +230,8 @@ if __name__ == '__main__':
     # print("插入数据:", insertmany(sql_str, arrays))
 
     # 查询
-    print("只取一行:", queryone("select * from FilePath limit %s,%s", (0, 1)))  # 尽量使用limit
+    print(queryone("select * from AMiner_Author limit 10"))
+    # print("只取一行:", queryone("select * from FilePath limit %s,%s", (0, 1)))  # 尽量使用limit
     # print("查询全表:", queryall("select * from test_users"))
     #
     # # 条件查询
